@@ -1,0 +1,92 @@
+name: nexus_ai
+description: "NEXUS AI — Think. Speak. See. Understand."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+  flutter: ">=3.29.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  hooks_riverpod: ^2.6.1
+  flutter_hooks: ^0.20.5
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # Networking
+  dio: ^5.7.0
+  web_socket_channel: ^3.0.2
+
+  # AI / LLM
+  dart_openai: ^5.1.0
+
+  # Voice
+  record: ^5.1.3
+  just_audio: ^0.9.43
+  permission_handler: ^11.4.0
+
+  # Vision
+  image_picker: ^1.1.2
+  flutter_image_compress: ^2.3.0
+
+  # Storage
+  drift: ^2.23.1
+  drift_flutter: ^0.2.4
+  sqlite3_flutter_libs: ^0.5.28
+  flutter_secure_storage: ^9.2.4
+
+  # UI / Animation
+  flutter_animate: ^4.5.2
+  shimmer: ^3.0.0
+
+  # Logging
+  talker_flutter: ^4.7.0
+  talker_dio_logger: ^4.7.0
+  talker_riverpod_logger: ^4.7.0
+
+  # Utilities
+  uuid: ^4.5.1
+  fpdart: ^1.1.0
+  connectivity_plus: ^6.1.4
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  intl: ^0.19.0
+  collection: ^1.19.1
+
+  # Google Fonts (for Inter + JetBrains Mono)
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Code Generation
+  build_runner: ^2.4.14
+  freezed: ^2.5.8
+  json_serializable: ^6.9.4
+  riverpod_generator: ^2.6.3
+  drift_dev: ^2.23.1
+
+  # Testing
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/animations/
+
+dependency_overrides:
+  record_linux: ^1.3.0
